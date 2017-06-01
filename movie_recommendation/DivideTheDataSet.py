@@ -6,7 +6,7 @@ TRAINING_SET = "ClusteredData/training.csv"
 TEST_SET = "ClusteredData/test.csv"
 
 dataset_file = "ClusteredData/izlaz.csv"
-COLUMNS = ["genres", "plot_keywords", "movie_title", "actor_1_name", "actor_2_name", "actor_3_name", "director_name","imdb_score", "category"]
+COLUMNS = ["genres", "plot_keywords", "movie_title", "actor_1_name", "actor_2_name", "actor_3_name", "director_name","imdb_score", "people", "category"]
 
 
 def divide_dataset(test_percentage = 20):

@@ -2,7 +2,7 @@ import numpy as np
 import csv
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer #koristi se za racunanje TF mere
 
 def readCsv(file_name):
     with open('RawDataSet/movies_formated.csv') as csvfile:
@@ -70,7 +70,7 @@ def main():
 
     file_name = "ClusteredData/izlaz.csv"
 
-    clean_data = clean_data.drop('people', 1)
+    #clean_data = clean_data.drop('people', 1)
     clean_data.to_csv(file_name, sep=',', index=False)
     print("Upisano u fajl izlaz.csv")
 

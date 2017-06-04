@@ -3,10 +3,18 @@ from __future__ import division
 from __future__ import print_function
 #koristimo porterov stremmer za pronalazenja korena reci radi bolje klasifikacije
 from porter2stemmer import  Porter2Stemmer
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
 import tensorflow as tf
 import pandas as pd
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+
+import nltk
+from nltk.stem.lancaster import LancasterStemmer
+import os
+import json
+import datetime
+stemmer = LancasterStemmer()
 
 tf.logging.set_verbosity(tf.logging.INFO)
 
@@ -26,7 +34,9 @@ def GetRecommendations():
 
     tset = pd.read_csv(TRAINING_SET, skipinitialspace=True, skiprows=1, names=COLUMNS)
 
-    words_set = tset.ix[:,['plot_keywords', 'movie_title','people']]
+    print(tset.shape)
+    print(type(tset))
+    words_set = tset.ix[:,['genres', 'plot_keywords', 'movie_title','people']]
 
     x = words_set.ix[:,['people']]
 
@@ -60,11 +70,9 @@ def GetRecommendations():
         training_list_items.append(jedan_red_string)
 
     corpus = training_list_items
+    print(corpus)
 
-    vectorizer = CountVectorizer()
-    vectorizer.fit_transform(corpus)
-    print(vectorizer.vocabulary_)
-    print(len(vectorizer.vocabulary_))
+
 
     #test set
     test_set = pd.read_csv(TEST_SET, skipinitialspace=True, skiprows=1, names=COLUMNS)
@@ -103,17 +111,23 @@ def GetRecommendations():
 
     corpus_test = test_list_items
     print(corpus_test)
-    freq_term_matrix = vectorizer.transform(corpus_test)
-    print(freq_term_matrix.todense())
 
-    tfidf = TfidfTransformer()
-    tfidf.fit(freq_term_matrix)
-    print("IDF:", tfidf.idf_)
-    vectorizer.fit_transform(corpus_test)
-    print(vectorizer.vocabulary_)
-    print(len(vectorizer.vocabulary_))
+    #racunamo tf-idf meru za trening set
+    tfidf_vectorizer = TfidfVectorizer()
+    tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
+    print(tfidf_matrix.shape)
+    print(type(tfidf_matrix))
+    np.set_printoptions(threshold=np.nan)
+    print(tfidf_matrix)
 
+    coo = tfidf_matrix.tocoo(copy=False)
+    nenad = pd.DataFrame({'index': coo.row, 'col': coo.col, 'data': coo.data}
+                 )[['index', 'col', 'data']].sort_values(['index', 'col']
+                                                         ).reset_index(drop=True)
 
+    print(nenad)
+
+    from sklearn.neural_network import MLPClassifier
 
 
 GetRecommendations()

@@ -29,8 +29,8 @@ def GetRecommendations():
 
     porterStremmer = Porter2Stemmer()
     #test
-    #ret = x.stem("factionally")
-    #print(ret)
+    ret = porterStremmer.stem("factionally")
+    print(ret)
 
     tset = pd.read_csv(TRAINING_SET, skipinitialspace=True, skiprows=1, names=COLUMNS)
 
@@ -310,7 +310,8 @@ def GetRecommendations():
     return classify
 
 
-fun_classify = GetRecommendations()
+#fun_classify = GetRecommendations()
 
-fun_classify("thriller war art french german paint train the train jeanne_moreau paul_scofield michel_simon john_frankenheimer")
+from textblob.classifiers import NaiveBayesClassifier
 
+cl = 

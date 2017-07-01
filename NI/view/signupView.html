@@ -1,0 +1,100 @@
+<div class="container" id="sig">
+            <form class="form-horizontal" role="form">
+                <h2 align="center">Registration Form</h2>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="First Name" class="form-control" ng-model = "regFirstName" autofocus>
+                        <span class="help-block">First Name, First Name, eg.: Lazar, Jelena</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="lastName" placeholder="Last Name" class="form-control" ng-model = "regLastName">
+                        <span class="help-block">Last Name eg.: Antic, Kostic</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Email" class="form-control" ng-model = "regEmail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" pattern=".{8,}" placeholder="Password" class="form-control" ng-model = "regPassword">
+                        <div class="help-block">Minimum of 8 characters</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Phone</label>
+                    <div class="col-sm-9">
+                        <input type="tel" id="phone" placeholder="Phone" class="form-control" ng-model = "regPhone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="birthDate" class="form-control" ng-model = "regBirthDate">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="country" class="col-sm-3 control-label">Country</label>
+                    <div class="col-sm-9">
+                        <select id="country" class="form-control" ng-model = "regSelectCountry">
+                            <option>Austria</option>
+                            <option>Serbia</option>
+                            <option>Bosnia and Herzegovina</option>
+                            <option>Croatia</option>
+                            <option>Romania</option>
+                            <option>Germany</option>
+                            <option>France</option>
+                            <option>Hungary</option>
+                            <option>Italy</option>
+                            <option>Portugal</option>
+                        </select>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Gender</label>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" id="femaleRadio" value="Female" ng-model = "regGen.female">Female
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" id="maleRadio" value="Male" ng-model = "regGen.male">Male
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" id="uncknownRadio" value="Unknown" ng-model = "regGen.unknown">Unknown
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.form-group -->
+
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" ng-model = "regTerms">I accept <a href="#/terms">terms</a>
+                            </label>
+                        </div>
+                    </div>
+                </div> <!-- /.form-group -->
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <input type="submit" class="btn btn-primary btn-block" ng-click = "registration()" value="Sign Up">
+
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->

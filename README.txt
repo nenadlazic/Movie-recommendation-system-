@@ -1,1 +1,0 @@
-Sistem za preporuku filmova zasnovan na korelaciji sadrzaja. Implementacija web aplikacije koja koristi neuronske mreze.

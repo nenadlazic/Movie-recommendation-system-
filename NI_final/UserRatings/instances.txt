@@ -1,0 +1,10 @@
+Bryan Singer,Marlon Brando,Kevin Spacey,Frank Langella,Superman Returns,return_to_earth,Action|Adventure|Sci-Fi
+Marc Forster,Mathieu Amalric,Giancarlo Giannini,Tom Wilkinson,Quantum of Solace ,reveng,Action|Adventure
+Gore Verbinski,Orlando Bloom,Johnny Depp,Pirates of the Caribbean: Dead Man's Chest ,Jack Davenport,monst,Action|Adventure|Fantasy
+Gore Verbinski,Ruth Wilson,Johnny Depp,The Lone Ranger ,Tom Wilkinson,train,Action|Adventure|Western
+Duncan Jones,Callum Rennie,Dominic Cooper,Warcraft , Ruth Negga,sword_and_sorceri,Action|Adventure|Fantasy
+Alan Taylor,Emilia Clarke,J.K. Simmons,Terminator Genisys ,Matt Smith,time_machin,Action|Adventure|Sci-Fi
+Michael Apted,Shane Rangi,Bruce Spence,The Chronicles of Narnia: The Voyage of the Dawn Treader , Laura Brent,warrior,Adventure|Family|Fantasy
+Jon Lucas,Josie Loren,Justin Chon,21 & Over ,Sarah Wright,stand_up_to_father,Comedy
+Olivier Assayas,Miranda Richardson,Steve Buscemi,"Paris, je t'aime ",Catalina Sandino Moreno,tourist,Comedy|Drama|Romance
+Rod Lurie,Kathryn Morris,Harry Lennix,Resurrecting the Champ ,Peter Coyote,writer,Drama|Sport

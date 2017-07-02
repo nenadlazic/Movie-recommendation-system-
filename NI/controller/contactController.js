@@ -33,10 +33,11 @@ MovieRecommendations.controller("contactController", ["$scope", "$rootScope", "$
             }).then(function(result_resolved) {
                     console.log("uspesno poslata");
 	                console.log(result_resolved);
-                    $location.path("/profile");
+                    $location.path("/");
             }, function(result_rejected) {
 				console.log("nije prihvatio");                
 				console.log(result_rejected);
+				$location.path("/");
             });
 
 

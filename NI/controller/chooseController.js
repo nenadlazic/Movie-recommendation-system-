@@ -524,6 +524,7 @@ MovieRecommendations.controller("chooseController", ["$scope", "$rootScope", "$l
 		method: "post",
         url:  "php/save_ratings_init.php",
         data: {
+        	email:$rootScope.logeduser,
         	ocenaa1: ocena1,
         	ocenaa2: ocena2,
         	ocenaa3: ocena3,

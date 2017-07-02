@@ -9,6 +9,10 @@ MovieRecommendations.controller("getRecommendationController", ["$scope", "$root
 	}, 5000);
 
 
+
+	console.log("DEBUG_N:");
+	console.log($rootScope.logeduser);
+	
 	var request = $http({
 		method: "post",
 		url: "php/getrecommendation.php",

@@ -1,10 +1,10 @@
-Julia Roberts , Enrico Colantoni , Blair Underwood , Steven Soderbergh , Full Frontal  , birthday|friend|hollywood|party|sex , Comedy|Romance
-Leonardo DiCaprio , Naomi Watts , Kaitlyn Dever , Clint Eastwood , J. Edgar  , agent|fbi|federal bureau of investigation|gay relationship|secret , Biography|Crime|Drama
-Christian Bale , Heath Ledger , Morgan Freeman , Christopher Nolan , The Dark Knight  , based on comic book|dc comics|psychopath|star died before release|urban setting , Action|Crime|Drama|Thriller
-Jelena Jovanova , Nikola Djuricko , Branko Djuric , Angelina Jolie Pitt , In the Land of Blood and Honey  , bosnian war|church|emaciation|soldier|violence , Drama|Romance|War
-Al Pacino , Marlon Brando , Robert Duvall , Francis Ford Coppola , The Godfather  , crime family|mafia|organized crime|patriarch|rise to power , Crime|Drama
+Brighton Sharbino , Ethan Embry , Elissa Dowling , E.L. Katz , Cheap Thrills  , cocaine|extramarital affair|sex|shooting|violence , Comedy|Crime|Drama|Horror|Thriller
+Aidan Turner , Adam Brown , James Nesbitt , Peter Jackson , The Hobbit: An Unexpected Journey  , dragon|dwarf|hobbit|orc|wizard , Adventure|Fantasy
+Johnny Depp , Tom Berenger , Kevin Dillon , Oliver Stone , Platoon  , 1960s|famous score|hero|vietnam|vietnam war , Drama|War
+Leslie Bibb , Patrick Fugit , Chase Ellison , Goran Dukic , Wristcutters: A Love Story  , afterlife|camping|death|hitchhiker|suicide , Comedy|Drama|Fantasy|Romance
 Johnny Depp , Orlando Bloom , Jack Davenport , Gore Verbinski , Pirates of the Caribbean: At Worlds End  , goddess|marriage ceremony|marriage proposal|pirate|singapore , Action|Adventure|Fantasy
-Mark Addy , William Hurt , Scott Grimes , Ridley Scott , Robin Hood  , 1190s|archer|england|king of england|robin hood , Action|Adventure|Drama|History
-Morgan Freeman , Tom Cruise , Zo?? Bell , Joseph Kosinski , Oblivion  , cabin in the woods|drone|flying through a thunderstorm|post apocalypse|sex in a pool , Action|Adventure|Mystery|Sci-Fi
 Christian Bale , Heath Ledger , Morgan Freeman , Christopher Nolan , The Dark Knight  , based on comic book|dc comics|psychopath|star died before release|urban setting , Action|Crime|Drama|Thriller
-Angelina Jolie Pitt , Fisher Stevens , Lorraine Bracco , Iain Softley , Hackers  , computer|computer virus|cyberpunk|fight the system|sexual fantasy , Comedy|Crime|Drama|Thriller
+CCH Pounder , Joel David Moore , Wes Studi , James Cameron , Avatar  , avatar|future|marine|native|paraplegic , Action|Adventure|Fantasy|Sci-Fi
+Mark Addy , William Hurt , Scott Grimes , Ridley Scott , Robin Hood  , 1190s|archer|england|king of england|robin hood , Action|Adventure|Drama|History
+Tom Hanks , John Ratzenberger , Don Rickles , Lee Unkrich , Toy Story 3  , college|day care|escape|teddy bear|toy , Adventure|Animation|Comedy|Family|Fantasy
+Brad Pitt , Meat Loaf , Eugenie Bondurant , David Fincher , Fight Club  , anti establishment|dark humor|fighting|multiple personality disorder|surprise ending , Drama

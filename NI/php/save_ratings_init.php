@@ -17,9 +17,18 @@
 	$o14 = $args->ocenaa14;
 	$o15 = $args->ocenaa15;
 	$o16 = $args->ocenaa16;
+	$email = $args->email;
+
+
+	
+	$sql = "SELECT users.id FROM `users` WHERE email LIKE '$email'";
+	$query = mysqli_query($myConnection, $sql) or die(mysqli_error($myConnection));
+	$row=mysqli_fetch_array($query);
+
+	$u = (int)$row['id'];
+
 
 	$m = 5046;
-	$u = 3;
 	$sql = "INSERT INTO users_ratings (user_id, movie_id, rating) VALUES('$u','$m', '$o1')";
 	$query = mysqli_query($myConnection, $sql) or die(mysqli_error($myConnection));
 
@@ -83,5 +92,5 @@
 	$sql = "INSERT INTO users_ratings (user_id, movie_id, rating) VALUES('$u','$m', '$o16')";
 	$query = mysqli_query($myConnection, $sql) or die(mysqli_error($myConnection));
 
-	echo $query;
+	echo $u;
 ?>

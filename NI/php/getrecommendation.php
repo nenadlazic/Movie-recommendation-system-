@@ -21,6 +21,6 @@
 	fwrite($myfile, $returnvalue);
 	fclose($myfile);
 
-	echo $returnvalue;
+	echo $count;
 
 ?>

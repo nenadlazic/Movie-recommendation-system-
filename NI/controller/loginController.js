@@ -2,6 +2,8 @@ MovieRecommendations.controller("loginController", ["$scope", "$rootScope", "$lo
     console.log(5 + 8);
     console.log("Debug5 + 8");
 
+    $scope.email = "some@dom.com";
+
     if($rootScope.stateLog == "LogOut"){
         $rootScope.stateLog = "LogIn";
     }

@@ -1,7 +1,9 @@
 MovieRecommendations.controller("signupController", ["$scope", "$rootScope", "$location", "$http", function($scope, $rootScope, $location, $http) {
     console.log(5 + 1);
 	console.log("Debug5 + 1");
+	$scope.regEmail = "some@dom.com";
 
+	
 	$scope.registration = function()
 	{
 		console.log("radiii");
@@ -58,8 +60,7 @@ MovieRecommendations.controller("signupController", ["$scope", "$rootScope", "$l
 		if ($scope.regGen == "" || $scope.regGen == null) {
         	error = 1;
 		}
-		var profileType = $scope.regProfileType;
-		console.log(profileType);	
+		var profileType = $scope.regProfileType;	
 		if ($scope.regProfileType == "" || $scope.regProfileType == null) {
         	error = 1;
 		}
@@ -68,7 +69,7 @@ MovieRecommendations.controller("signupController", ["$scope", "$rootScope", "$l
 		if(terms != true){
 			alert("You be must accept the terms of use in order to register");
 		}
-
+		error = 0;
 		if (error == 0) {
 			$rootScope.logeduser = $scope.regEmail
 	    	var request = $http({
